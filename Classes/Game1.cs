@@ -48,7 +48,7 @@ namespace DesertTrain.Classes
 
             // TODO: Add your update logic here
             _train.Update();
-            _bg1.Update();
+            _bg1.Update(Content);
             _bg2.Update();
 
             base.Update(gameTime);

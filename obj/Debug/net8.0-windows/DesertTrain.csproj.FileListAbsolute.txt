@@ -27,3 +27,4 @@ C:\Users\maxim\source\repos\DesertTrain\DesertTrain\obj\Debug\net8.0-windows\ref
 C:\Users\maxim\source\repos\DesertTrain\DesertTrain\bin\Debug\net8.0-windows\Content\Bg1.xnb
 C:\Users\maxim\source\repos\DesertTrain\DesertTrain\bin\Debug\net8.0-windows\Content\Bg2.xnb
 C:\Users\maxim\source\repos\DesertTrain\DesertTrain\bin\Debug\net8.0-windows\Content\Train.xnb
+C:\Users\maxim\source\repos\DesertTrain\DesertTrain\obj\Debug\net8.0-windows\DesertTrain.sourcelink.json

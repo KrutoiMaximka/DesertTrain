@@ -35,13 +35,12 @@ namespace DesertTrain.Classes
         {
             _texture = content.Load<Texture2D>("Bg1");
 
-            if (_timer >= _maxTime)
-                _texture = content.Load<Texture2D>("Bg1(night)");
+            
 
             _position1 = new Vector2(_texture.Width, 0);
         }
 
-        public void Update()
+        public void Update(ContentManager content)
         {
             if (_timer <= _maxTime)
             {
@@ -54,11 +53,8 @@ namespace DesertTrain.Classes
                 }
                 _timer++;
             }
-
             if (_timer >= _maxTime)
-            {
-
-            }
+                _texture = content.Load<Texture2D>("Bg1(night)");
 
         }
 
