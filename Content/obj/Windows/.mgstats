@@ -1,0 +1,5 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Bg1.png","C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/bin/Windows/Bg1.xnb","TextureProcessor","Texture2DContent",21210,3540565,0,2091019
+"C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Bg1(night).png","C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/bin/Windows/Bg1(night).xnb","TextureProcessor","Texture2DContent",21811,3540565,0,1082825
+"C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Bg2.png","C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/bin/Windows/Bg2.xnb","TextureProcessor","Texture2DContent",103095,1228885,0,0660548
+"C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Train.png","C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/bin/Windows/Train.xnb","TextureProcessor","Texture2DContent",16334,1128773,0,0711454
