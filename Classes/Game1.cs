@@ -16,6 +16,8 @@ namespace DesertTrain
         private Zombie _zombie;
         public ShopButton _shop;
         public CoinsIcon1 _coins1;
+        public ContentManager content;
+        public Shop _shopmenu;
 
         public Game1()
         {
@@ -30,9 +32,9 @@ namespace DesertTrain
             _bg1 = new Bg1();
             _train = new Train();
             _zombie = new Zombie();
-            _shop = new ShopButton();
             _coins1 = new CoinsIcon1();
-
+            _shopmenu = new Shop();
+        
 
             base.Initialize();
         }
@@ -44,8 +46,9 @@ namespace DesertTrain
             _bg1.LoadContent(Content);
             _train.LoadContent(Content);
             _zombie.LoadContent(Content);
-            _shop.LoadContent(Content);
+            _shop = new(Content.Load<Texture2D>("shop button"),new (10,10));
             _coins1.LoadContent(Content);
+            _shopmenu.LoadContent(content);
             // TODO: use this.Content to load your game content here
         }
 
@@ -63,8 +66,9 @@ namespace DesertTrain
                 {
                     _zombie.Update();
                 }
-                _shop.Update();
+                _shop.Update(Content);
                 _coins1.Update();
+                _shopmenu.Update();
 
             }
             _spriteBatch.End();
@@ -86,6 +90,7 @@ namespace DesertTrain
                 }
                 _shop.Draw(_spriteBatch);
                 _coins1.Draw(_spriteBatch);
+                _shopmenu.Draw(_spriteBatch);
 
             }
             _spriteBatch.End();

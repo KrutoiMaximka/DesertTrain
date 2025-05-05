@@ -8,21 +8,22 @@ using System.Threading;
 
 namespace DesertTrain.Classes
 {
-    public class CoinsIcon1
+    public class Shop
     {
-        private Vector2 _position = new Vector2(140, 10);
+        private Vector2 _position = new Vector2(0,0);
         private Texture2D _texture = null;
+
         public void LoadContent(ContentManager content)
         {
-            _texture = content.Load<Texture2D>("coins");
+            _texture = content.Load<Texture2D>("shopMenuBg");
         }
         public void Update()
         {
 
         }
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(SpriteBatch _spriteBatch)
         {
-            spriteBatch.Draw(_texture, _position, Color.White);
+            _spriteBatch.Draw(_texture,_position,Color.White);
         }
     }
 }
