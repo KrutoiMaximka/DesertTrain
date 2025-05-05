@@ -15,12 +15,17 @@ namespace DesertTrain.Classes
         private Vector2 _position2;
         private float _speed;
         private int _timer = 0;
-        private int _maxTime = 5;
+        private int _maxTime = 300;
         private ContentManager content;
+        public bool night = false;
 
         public float Speed
         {
             set => _speed = value;
+        }
+        public bool Night
+        {
+            get; set;
         }
 
         public Bg1()
@@ -35,7 +40,7 @@ namespace DesertTrain.Classes
         {
             _texture = content.Load<Texture2D>("Bg1");
 
-            
+
 
             _position1 = new Vector2(_texture.Width, 0);
         }
@@ -51,10 +56,22 @@ namespace DesertTrain.Classes
                     _position1.X = _texture.Width;
                     _position2.X = 0;
                 }
-                _timer++;
+
             }
-            if (_timer >= _maxTime)
+            if (_timer >= _maxTime && _timer <= 30000)
+            {
                 _texture = content.Load<Texture2D>("Bg1(night)");
+                night = true;
+            }
+
+            if (_timer == 30000)
+            {
+                _texture = content.Load<Texture2D>("Bg1");
+                night = false;
+                _timer = 0;
+
+            }
+            _timer++;
 
         }
 

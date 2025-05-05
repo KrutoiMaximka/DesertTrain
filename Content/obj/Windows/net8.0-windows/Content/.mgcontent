@@ -7,9 +7,17 @@
     <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Bg1.png</File>
     <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Bg1(night).png</File>
     <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Bg2.png</File>
+    <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/coins.png</File>
+    <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/shop button.png</File>
+    <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/StarZombie.png</File>
     <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Train.png</File>
+    <File>C:/Users/maxim/source/repos/DesertTrain/DesertTrain/Content/Zombie.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
