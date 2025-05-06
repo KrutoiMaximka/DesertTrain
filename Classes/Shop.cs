@@ -6,12 +6,16 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using System.Threading;
 
+
 namespace DesertTrain.Classes
 {
     public class Shop
     {
-        private Vector2 _position = new Vector2(0,0);
+        private Vector2 _position = new Vector2(100,0);
         private Texture2D _texture = null;
+        private readonly Rectangle _rect = new Rectangle();
+        MouseState prevms;
+        ShopButton _shopB = new ShopButton();
 
         public void LoadContent(ContentManager content)
         {
@@ -23,7 +27,7 @@ namespace DesertTrain.Classes
         }
         public void Draw(SpriteBatch _spriteBatch)
         {
-            _spriteBatch.Draw(_texture,_position,Color.White);
+            _spriteBatch.Draw(_texture, _position, Color.White);
         }
     }
 }

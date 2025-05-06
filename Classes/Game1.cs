@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using DesertTrain.Classes;
+using SharpDX.Direct3D9;
 
 namespace DesertTrain
 {
@@ -18,6 +19,8 @@ namespace DesertTrain
         public CoinsIcon1 _coins1;
         public ContentManager content;
         public Shop _shopmenu;
+        public static MouseState mouse = Mouse.GetState();
+        public Rectangle cursor = new(mouse.Position.X, mouse.Position.Y, 1, 1);
 
         public Game1()
         {
@@ -48,7 +51,7 @@ namespace DesertTrain
             _zombie.LoadContent(Content);
             _shop = new(Content.Load<Texture2D>("shop button"),new (10,10));
             _coins1.LoadContent(Content);
-            _shopmenu.LoadContent(content);
+            _shopmenu.LoadContent(Content);
             // TODO: use this.Content to load your game content here
         }
 
@@ -88,9 +91,13 @@ namespace DesertTrain
                 {
                     _zombie.Draw(_spriteBatch);
                 }
-                _shop.Draw(_spriteBatch);
+                _shop.Draw(_spriteBatch,cursor);
                 _coins1.Draw(_spriteBatch);
-                _shopmenu.Draw(_spriteBatch);
+                if (_shop.isShop == true)
+                {
+                    _shopmenu.Draw(_spriteBatch);
+                }
+               
 
             }
             _spriteBatch.End();

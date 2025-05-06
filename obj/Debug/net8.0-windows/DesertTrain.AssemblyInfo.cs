@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesertTrain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41b8922ba44e87b91a31d35b1ea41674fbe92aba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55d3ee041731b741972a7969ca927c4b2e8ec1f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesertTrain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesertTrain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
